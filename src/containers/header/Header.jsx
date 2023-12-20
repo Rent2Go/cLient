@@ -1,34 +1,38 @@
 import React from "react";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { CiSearch } from "react-icons/ci";
 
 
 import "./header.css";
 
 const Header = () => {
   return (
-    <div className="gpt3__header section__padding" id="home">
-      <div className="gpt3__header-content">
-        <h1 className="gradient__text">
-          Let’s Build Something amazing with GPT-3 OpenAI
-        </h1>
-        <p>
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everything joy
-          alteration boisterous the attachment. Party we years to order allow
-          asked of.
-        </p>
-        <div className="gpt3__header-content__input">
-          <input type="email" placeholder="Your Email Address " />
-          <button type="button"> Get Started</button>
+    <div className="rent2go__header section__padding section__no-bg" id="home">
+      <div className="rent2go__header-content">
+        <div className="search__text">
+          <h3 className="">Araç Kiralama</h3>
+          <p>Hayalindeki Aracı Al ve Git</p>
         </div>
 
-        <div className="gpt3__header-content__people">
-          <img src={people} alt="people"/>
-          <p>1,600 people requested access a visit in last 24 hours</p>
+        <div className="rent2go__header-content__input">
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker label="Başlangıç Tarihi" />
+            </DemoContainer>
+          </LocalizationProvider>
+
+          <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DatePicker']}>
+              <DatePicker label="Bitiş Tarihi" />
+            </DemoContainer>
+          </LocalizationProvider>
+
+          <button className="search-btn" type="button"><CiSearch /> Ara</button>
         </div>
       </div>
-      <div className="gpt3__header-image">
-          <img alt="ai"/>
-        </div>
     </div>
   );
 };

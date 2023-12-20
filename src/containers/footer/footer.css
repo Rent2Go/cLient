@@ -1,42 +1,43 @@
-.gpt3__footer{
+.rent2go__footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: var(--color-footer);
+    background: var(--color-bg);
+    border-top:1px solid red;
 }
-.gpt3__footer-heading{
+.rent2go__footer-heading{
     width: 100%;
     text-align: center;
     margin-bottom: 3rem;
 }
-.gpt3__footer-heading h1{
+.rent2go__footer-heading h1{
     font-family: var(--font-family);
     font-weight: 800;
     line-height: 75px;
     font-size: 64px;
     letter-spacing: -0.04px;
 }
-.gpt3__footer-btn{
+.rent2go__footer-btn{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    border:1px solid #FFFFFF;
+    border:1px solid #333538;
     margin-bottom:10rem;
     text-align: center;
     cursor: pointer;
 }
 
-.gpt3__footer-btn p{
+.rent2go__footer-btn p{
     box-sizing: border-box;
-    color:#FFFFFF;
+    color:#333538;
     font-size: 18px;
     line-height: 21px;
     word-spacing: 2px;
     font-family: var(--font-family);
 }
-.gpt3__footer-links{
+.rent2go__footer-links{
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
@@ -46,79 +47,79 @@
     text-align: left;
 
 }
-.gpt3__footer-links div{
+.rent2go__footer-links div{
     width: 250px;
     margin: 1rem;
 }
-.gpt3__footer-links_logo{
+.rent2go__footer-links_logo{
     display: flex;
     flex-direction: column;
 }
-.gpt3__footer-links_logo img{
-    width: 118px;
-    height: 30px;
+.rent2go__footer-links_logo img{
+    width: 394px;
+    height: 370px;
     margin-bottom: 1rem;
 }
-.gpt3__footer-links_logo p{
+.rent2go__footer-links_logo p{
     font-family: var(--font-family);
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #333538;
 
 }
-.gpt3__footer-links_div{
+.rent2go__footer-links_div{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
-.gpt3__footer-links_div h4{
+.rent2go__footer-links_div h4{
     font-family: var(--font-family);
     font-size: 14px;
     line-height: 17px;
-    color: #FFFFFF;
+    color: #333538;
     margin-bottom: 0.9rem;
 
 }
-.gpt3__footer-links_div p{
+.rent2go__footer-links_div p{
     font-family: var(--font-family);
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #333538;
     margin:0.5rem 0;
     cursor: pointer;
 
 }
 
-.gpt3__footer-copyright{
+.rent2go__footer-copyright{
     width: 100%;
     margin-top: 2rem;
     text-align: center;
 }
 
-.gpt3__footer-copyright p{
+.rent2go__footer-copyright p{
     font-family: var(--font-family);
     font-size: 12px;
     font-weight: 500;
     line-height: 15px;
-    color: #FFFFFF;
+    color: #333538;
 }
 
 
 @media screen and (max-width:550px) {
-    .gpt3__foter-heading h1{
+    .rent2go__foter-heading h1{
         font-size:34px ;
         line-height: 42px;
     }
-    .gpt3__footer-links div{
+    .rent2go__footer-links div{
         margin: 1rem 0;
     }
-    .gpt3__foter-btn p{
+    .rent2go__foter-btn p{
         font-size:14px ;
         line-height: 20px;
     }
 }
 @media screen and (max-width:400px) {
-    .gpt3__foter-heading h1{
+    .rent2go2go2go__foter-heading h1{
         font-size:27px ;
         line-height: 38px;
     }

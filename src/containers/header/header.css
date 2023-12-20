@@ -1,75 +1,93 @@
-.gpt3__header{
+.rent2go__header{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+.section__no-bg{
+    /*background-color: var(--color-bg);*/
 }
 
-.gpt3__header-content{
-    flex: 1;
+.rent2go__header-content {
+    flex: 1 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5rem;
+    padding: 0 2rem;
+    width: 941px;
+    max-width: 941px;
+    height: 111px;
+    background-color: var(--color-blog);
+}
+.search__text{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-
-    margin-right: 5rem;
 }
 
-.gpt3__header-content h1{
+.rent2go__header-content h3{
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 62px;
-    line-height: 75px;
+    font-size: 28px;
+    line-height: 20px;
     letter-spacing: -0.04em;
+    color: var(--color-text);
+
 }
-.gpt3__header-content p{
+.rent2go__header-content p{
     font-family: var(--font-family);
     font-weight: normal;
-    font-size: 20px;
-    line-height: 27px;
-
-    color: var(--color-text);
-    margin-top: 1.5rem;
+    font-size: 13px;
+    color: var(--color-subtext);
+    margin-top: 0.5rem;
 }
-.gpt3__header-content__input{
-    width: 100%;
-    margin: 2rem 0 1rem;
+.rent2go__header-content__input {
+    width: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.gpt3__header-content__input input{
-    flex: 2;
+.rent2go__header-content__input input{
+    flex: 1;
     width: 100%;
-    min-height: 50px;
     font-family: var(--font-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 28px;
-    padding: 0 1rem;
     outline: none;
-    color: #fff;
-    background: var(--color-footer);
-    border: 2px solid var(--color-footer);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    color: var(--color-border);
+    background: var(--color-blog);
+    margin: 0.5rem 0.5rem  0rem 0.5rem;
 }
-.gpt3__header-content__input button{
-    flex: 0.6;
-    width: 100%;
-    min-height: 50px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    background: #FF4820;
-    border: 2px solid #FF4820;
-    padding: 0 1rem;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+.css-4jnixx-MuiStack-root>.MuiTextField-root {
+    min-width: 200px;
+    margin: 0rem 0rem  0rem 0.5rem;
+}
+.rent2go__header-content__input .search-btn{
+        flex: 1 1;
+        width: 100%;
+        height: 60px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 28px;
+        background: var(--color-btn-bg);
+        border: 2px solid var(--color-btn-border);
+        padding: 0 3rem;
+        color: var(--color-btn-border);
+        cursor: pointer;
+        outline: none;
+        margin: 0.5rem 0.5rem  0rem 0.5rem;
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
 }
 
-.gpt3__header-content__people{
+.rent2go__header-content__people{
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -77,11 +95,11 @@
 
     margin-top: 2rem;
 }
-.gpt3__header-content__people img{
+.rent2go__header-content__people img{
     width: 181.79px;
     height: 38px;
 }
-.gpt3__header-content__people p{
+.rent2go__header-content__people p{
     margin:0 0 0 1rem;
     font-family: var(--font-family);
     font-weight: 500;
@@ -91,66 +109,66 @@
     text-align: center;
 }
 
-.gpt3__header-image{
+.rent2go__header-image{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.gpt3__header-image img{
+.rent2go__header-image img{
     width: 100%;
     height: 100%;
 }
 @media screen and (max-width:1345px) {
-    .gpt3__header-image img{
+    .rent2go__header-image img{
         width: 100%;
         height: auto;
     }
 }
 
 @media screen and (max-width:1050px) {
-    .gpt3__header {
+    .rent2go__header {
         flex-direction: column;
     }
 
-    .gpt3__header-content{
+    .rent2go__header-content{
         margin: 0 0 3rem;
     }
     
 }
 @media screen and (max-width:650px) {
-    .gpt3__header h1 {
+    .rent2go__header h1 {
         font-size: 48px;
         line-height: 60px;
     }
-    .gpt3__header p{
+    .rent2go__header p{
         font-size: 16px;
         line-height: 24px;
     }
-    .gpt3__header-content__people{
+    .rent2go__header-content__people{
         flex-direction: column;
     }
-    .gpt3__header-content__people p{
+    .rent2go__header-content__people p{
         margin: 0;
     }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button{
+    .rent2go__header-content__input input,
+    .rent2go__header-content__input button{
         font-size: 16px;
         line-height: 24px;
     }
     
 }
 @media screen and (max-width:650px) {
-    .gpt3__header h1 {
+    .rent2go__header h1 {
         font-size: 36px;
         line-height: 48px;
     }
-    .gpt3__header p{
+    .rent2go__header p{
         font-size: 14px;
         line-height: 24px;
     }
-    .gpt3__header-content__input input,
-    .gpt3__header-content__input button{
+    .rent2go__header-content__input input,
+    .rent2go__header-content__input button{
         font-size: 12px;
         line-height: 16px;
     }
