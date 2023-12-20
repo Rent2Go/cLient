@@ -1,0 +1,38 @@
+
+.rent2go__popular-content_card-block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.rent2go__popular-content_card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(25% - 20px); 
+    margin: 10px; 
+    padding: 2rem;
+    border:1px solid var(--color-border-2)
+}
+.rent2go__popular-content_card-text_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-family: var(--font-family);
+}
+
+.rent2go__popular-content_card-text_block h3{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    color: var(--color-text);
+}
+.rent2go__popular-content_card-text_block p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    color: var(--color-border);
+}
